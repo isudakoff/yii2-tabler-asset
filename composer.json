@@ -1,0 +1,50 @@
+{
+  "name": "isudakoff/yii2-tabler-asset",
+  "description": "Tabler Bootstrap 4 theme asset bundle for Yii 2.0 Framework",
+  "type": "yii2-extension",
+  "keywords": [
+    "yii2",
+    "extension",
+    "tabler",
+    "admin",
+    "adminpanel",
+    "admin-dashboard",
+    "dashboard",
+    "bootstrap4",
+    "bootstrap4-theme",
+    "theme",
+    "backend",
+    "frontend",
+    "asset",
+    "css",
+    "less"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Ilya Sudakov",
+      "email": "isudakoff@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "yiisoft/yii2": "~2.0.0",
+    "yiisoft/yii2-bootstrap4": "~1.0.0",
+    "tabler/tabler": "^0.0.32"
+  },
+  "suggest": {
+    "cebe/yii2-gravatar": "Display user icons",
+    "rmrevin/yii2-fontawesome": "Font icons"
+  },
+  "autoload": {
+    "psr-4": {
+      "isudakoff\\": ""
+    }
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    }
+  ]
+}
