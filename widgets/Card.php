@@ -29,35 +29,35 @@ use yii\bootstrap4\Widget;
  */
 class Card extends Widget
 {
-    public $cardContainerOptions;
+    public $cardContainerOptions = [];
 
     public $useCardStatus = false;
 
-    public $cardStatusOptions;
+    public $cardStatusOptions = [];
 
     public $cardTitle;
 
-    public $cardTitleOptions;
+    public $cardTitleOptions = [];
 
     public $cardOptions;
 
-    public $cardOptionsOptions;
+    public $cardOptionsOptions = [];
 
     public $useCardHeader = true;
 
-    public $cardHeaderOptions;
+    public $cardHeaderOptions = [];
 
     public $cardAlert;
 
-    public $cardAlertOptions;
+    public $cardAlertOptions = [];
 
     public $cardBody = '';
 
-    public $cardBodyOptions;
+    public $cardBodyOptions = [];
 
     public $cardFooter;
 
-    public $cardFooterOptions;
+    public $cardFooterOptions = [];
 
     /** methods * */
     public function init()
@@ -75,6 +75,7 @@ class Card extends Widget
         Html::addCssClass($this->cardContainerOptions, 'card');
         Html::addCssClass($this->cardStatusOptions, 'card-status');
         Html::addCssClass($this->cardHeaderOptions, 'card-header');
+        Html::addCssClass($this->cardOptionsOptions, 'card-options');
         Html::addCssClass($this->cardTitleOptions, 'card-title');
         Html::addCssClass($this->cardAlertOptions, 'card-alert alert');
         Html::addCssClass($this->cardBodyOptions, 'card-body');
