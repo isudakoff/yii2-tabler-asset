@@ -100,15 +100,15 @@ class Card extends Widget
                     $out .= Html::endTag('h3');
                     $out .= Html::beginTag('div', $this->cardOptionsOptions);
                         $out .= $this->cardOptions ?:
-                            Html::a('<i class="fe fe-chevron-up">', '#', [
+                            Html::a('<i class="fe fe-chevron-up"></i>', '#', [
                                 'class' => 'card-options-collapse',
                                 'data-toggle' => 'card-collapse',
-                            ]) . "\n" .
-                            Html::a('<i class="fe fe-maximize">', '#', [
+                            ]) . "<br>" .
+                            Html::a('<i class="fe fe-maximize"></i>', '#', [
                                 'class' => 'card-options-fullscreen',
                                 'data-toggle' => 'card-fullscreen',
-                            ]) . "\n" .
-                            Html::a('<i class="fe fe-x">', '#', [
+                            ]) . "<br>" .
+                            Html::a('<i class="fe fe-x"></i>', '#', [
                                 'class' => 'card-options-remove',
                                 'data-toggle' => 'card-remove',
                             ]);
